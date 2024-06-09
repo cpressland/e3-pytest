@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "e3-api-test"
+version = "0.0.0"
+description = "Simple Test Runner for the E3 API"
+authors = ["Chris Pressland <mail@cpressland.io>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.2.2"
+pydantic = "^2.7.3"
+requests = "^2.32.3"
+pydantic-settings = "^2.3.1"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+
+[tool.ruff]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
